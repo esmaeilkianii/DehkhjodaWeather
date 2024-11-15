@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هواشناسی دهخدا</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-C0LV9cZV.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="لوگوی شرکت کشت و صنعت نیشکر دهخدا" class="company-logo">
+            <h1>شرکت کشت و صنعت نیشکر دهخدا</h1>
+            <div class="datetime">
+                <span id="current-date"></span>
+                <span id="current-time"></span>
+            </div>
+        </div>
+
+        <div class="current-weather">
+            <i id="weather-icon" class="fas fa-sun"></i>
+            <div class="temperature">
+                <span id="temp">--</span>°C
+            </div>
+            <div class="feels-like">
+                احساس دما: <span id="feels-like">--</span>°C
+            </div>
+            <div class="description" id="description">--</div>
+        </div>
+
+        <div class="weather-details">
+            <div class="detail-item">
+                <i class="fas fa-tint"></i>
+                <span id="humidity">--</span>%
+                <p>رطوبت</p>
+            </div>
+            <div class="detail-item wind-detail">
+                <div class="wind-info">
+                    <i class="fas fa-wind"></i>
+                    <span id="wind-speed">--</span> km/h
+                    <div class="wind-direction-wrapper">
+                        <i id="wind-direction" class="fas fa-location-arrow"></i>
+                        <span id="wind-deg">--</span>°
+                    </div>
+                </div>
+                <p>سرعت و جهت باد</p>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-compress-alt"></i>
+                <span id="pressure">--</span> hPa
+                <p>فشار هوا</p>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-eye"></i>
+                <span id="visibility">--</span> km
+                <p>دید افقی</p>
+            </div>
+        </div>
+
+        <div class="sun-times">
+            <div class="sun-item">
+                <i class="fas fa-sunrise"></i>
+                <span id="sunrise">--:--</span>
+                <p>طلوع آفتاب</p>
+            </div>
+            <div class="sun-item">
+                <i class="fas fa-sunset"></i>
+                <span id="sunset">--:--</span>
+                <p>غروب آفتاب</p>
+            </div>
+        </div>
+
+        <div id="forecast" class="forecast">
+            <!-- Forecast days will be inserted here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
